@@ -8,11 +8,6 @@ hasil_laporan = dir_file /"pages"/ "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil = dir_file / "foto" / "darrell.jpeg"
 
 
-st.set_page_config(
-    page_title="Web Absensi",
-    page_icon="🗓️",
-)
-
 
 NAMA = "Darrell Ardhani Hidayat"
 DESKRIPSI = """
