@@ -20,7 +20,6 @@ SOSIAL_MEDIA = {
 
 st.title("Bagian Profil Kreator")
 
-st.sidebar.succes("Pilih Bagian Yang Inginn Dituju.")
 
 with open(file_css) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
