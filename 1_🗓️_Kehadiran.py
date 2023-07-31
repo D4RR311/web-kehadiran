@@ -44,6 +44,6 @@ ts = time.time()
 date = datetime.fromtimestamp(ts).strftime("%d-%m-%Y")
 stempel_waktu = datetime.fromtimestamp(ts).strftime("%H-%M-%S")
 
-df = pd.read_csv("kehadiran/absensi/kehadiran_" + date + ".csv")
+df = pd.read_csv("absensi/kehadiran_" + date + ".csv")
 
 st.dataframe(df.style.highlight_max(axis=0))
