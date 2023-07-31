@@ -8,7 +8,10 @@ hasil_laporan = dir_file /"pages"/ "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil = dir_file / "foto" / "darrell.jpeg"
 
 
-
+st.set_page_config(
+    page_title="Web Absensi",
+    page_icon="🗓️",
+)
 
 
 NAMA = "Darrell Ardhani Hidayat"
@@ -21,6 +24,8 @@ SOSIAL_MEDIA = {
 }
 
 st.title("Bagian Profil Kreator")
+
+st.sidebar.succes("Pilih Bagian Yang Inginn Dituju.")
 
 with open(file_css) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
