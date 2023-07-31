@@ -20,6 +20,10 @@ SOSIAL_MEDIA = {
     "GitHub": "https://github.com/D4RR311",
 }
 
+st.set_page_config(
+    page_title="Web Absensi",
+    page_icon="🗓️",
+
 st.title("Bagian Profil Kreator")
 
 with open(file_css) as f:
