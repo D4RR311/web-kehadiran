@@ -27,7 +27,10 @@ with open(hasil_laporan, "rb") as file_pdf:
     PDFByte = file_pdf.read()
 gmbr_profil = Image.open(gmbr_profil)  
 
-
+st.set_page_config(
+    page_title="Web Absensi",
+    page_icon="🗓️",
+)
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
