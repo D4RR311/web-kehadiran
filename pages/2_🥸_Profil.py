@@ -8,7 +8,6 @@ hasil_laporan = dir_file /"pages"/ "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil = dir_file / "foto" / "darrell.jpeg"
 
 
-
 NAMA = "Darrell Ardhani Hidayat"
 DESKRIPSI = """
 Peneliti SMPN 3 Kalasan, Operator Web Absensi dan Reposity Github, Pemula Dalam Bahasa Pemrograman Python
@@ -18,8 +17,12 @@ SOSIAL_MEDIA = {
     "GitHub": "https://github.com/D4RR311",
 }
 
-st.title("Bagian Profil Kreator")
+st.set_page_config(
+    page_title="Web Absensi",
+    page_icon="🗓️",
+)
 
+st.title("Bagian Profil Kreator")
 
 with open(file_css) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
@@ -27,10 +30,7 @@ with open(hasil_laporan, "rb") as file_pdf:
     PDFByte = file_pdf.read()
 gmbr_profil = Image.open(gmbr_profil)  
 
-st.set_page_config(
-    page_title="Web Absensi",
-    page_icon="🗓️",
-)
+
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
