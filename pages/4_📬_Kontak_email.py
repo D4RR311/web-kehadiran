@@ -5,7 +5,9 @@ st.set_page_config(
     page_icon="🗓️",
 )
 
-st.header(" Tetap Dalam Sentuhan")
+st.header("Tetap Dalam Sentuhan")
+st.write("Untuk Mengetahui Lebih Lanjut Tentang Absensi Kami,
+         isi Email Anda Di Bawah Sini")
 
 contact_form = """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
