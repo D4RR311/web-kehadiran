@@ -14,7 +14,7 @@ contact_form = """
 
 st.markdown(contact_form, unsafe_allow_html=True)
 
-local_css("pages/aset/style.css")
+local_css("aset/style.css")
 
 def local_css(filename):
     with open(filename) as f:
