@@ -8,7 +8,7 @@ st.set_page_config(
 st.header(" Tetap Dalam Sentuhan")
 
 contact_form = """
-<form action="https://formsubmit.co/emailreceiver224@gmail.com@gmail.com" method="POST">
+<form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
     <input type="text" name="name" placeholder="Nama Anda" required>
     <input type="email" name="email" placeholder="Email Anda" required>
