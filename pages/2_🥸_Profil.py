@@ -46,7 +46,7 @@ with col2:
         file_name=hasil_laporan.name,
         mime="application/octet-stream",
     )
-st.write("📬",EMAIL)
+st.write("📬Email Kreator:",EMAIL)
 
 st.write("#")
 cols = st.columns(len(SOSIAL_MEDIA))
