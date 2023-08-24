@@ -2,12 +2,6 @@ import streamlit as st
 
 st.header(" Tetap Dalam Sentuhan")
 
-local_css("pages/model/style.css")
-
-def local_css(filename):
-    with open(filename) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 contact_form = """
 <form action="https://formsubmit.co/darrellardhanihidayat@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
@@ -19,3 +13,9 @@ contact_form = """
 """
 
 st.markdown(contact_form, unsafe_allow_html=True)
+
+def local_css(filename):
+    with open(filename) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("/pages/aset/style.css")
