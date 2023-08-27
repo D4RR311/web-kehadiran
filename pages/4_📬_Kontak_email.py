@@ -7,6 +7,7 @@ st.set_page_config(
 
 custom_web = f"""
 <style>
+
 [data-testid="stToolbar"] {{
 right: 2rem;
 }}
@@ -14,6 +15,7 @@ right: 2rem;
 [data-testid="collapsedControl"]{{
 left: 1rem;
 }}
+
 </style>
 """
 
