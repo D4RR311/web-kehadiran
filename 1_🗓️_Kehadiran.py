@@ -9,8 +9,6 @@ st.set_page_config(
     page_icon="🗓️",
 )
 
-st.sidebar.success("Pilih Bagian Yang Ingin Dituju.")
-
 @st.cache_data
 def get_img_as_base64(file):
     with open(file, "rb") as f:
