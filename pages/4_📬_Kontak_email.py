@@ -20,6 +20,7 @@ left: 1rem;
 """
 
 st.title("Tetap Dalam Sentuhan")
+st.markdown(custom_web, unsafe_allow_html=True)
 st.write("Untuk Mengetahui Lebih Lanjut Tentang Absensi Kami, isi Email Anda Di Bawah Sini")
 
 contact_form = """
@@ -33,7 +34,6 @@ contact_form = """
 """
 
 st.markdown(contact_form, unsafe_allow_html=True)
-st.markdown(custom_web, unsafe_allow_html=True)
 
 def local_css(filename):
     with open(filename) as f:
