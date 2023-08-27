@@ -34,6 +34,10 @@ background-color: rgba(0, 0, 0, 0);
 right: 2rem;
 }}
 
+[data-testid="collapsedControl"] {{
+left: 1rem;
+}}
+
 </style>
 """
 
