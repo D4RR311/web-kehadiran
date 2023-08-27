@@ -12,7 +12,7 @@ custom_web = f"""
 right: 2rem;
 }}
 
-[data-testid="collapsedControl"]{{
+[data-testid="collapsedControl"] {{
 left: 1rem;
 }}
 
