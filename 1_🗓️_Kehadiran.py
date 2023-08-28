@@ -29,8 +29,10 @@ background-color: rgba(0, 0, 0, 0);
 }}
 
 [data-testid="stToolbar"] {{
-right: 2rem;
+right: 4rem;
 }}
+
+[class="stActo
 
 [data-testid="collapsedControl"] {{
 left: 1rem;
