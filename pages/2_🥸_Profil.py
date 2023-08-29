@@ -62,6 +62,7 @@ with col2:
 st.write("📬Email Kreator:",EMAIL)
 
 st.write("#")
+st.subheader("Sosial Media:")
 cols = st.columns(len(SOSIAL_MEDIA))
 for index, (platform, link) in enumerate(SOSIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
