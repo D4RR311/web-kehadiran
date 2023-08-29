@@ -22,7 +22,20 @@ st.set_page_config(
     page_icon="🗓️",
 )
 
+custom_web = f"""
+<style>
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+
+[data-testid="collapsedControl"]{{
+left: 1rem;
+}}
+</style>
+"""
+
 st.title("Bagian Profil Kreator")
+st.markdown(custom_web, unsafe_allow_html=True)
 
 with open(file_css) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
