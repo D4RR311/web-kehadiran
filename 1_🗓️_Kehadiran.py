@@ -29,7 +29,7 @@ background-color: rgba(0, 0, 0, 0);
 }}
 
 [data-testid="stToolbar"] {{
-right: 4rem;
+right: 1rem;
 }}
 
 [class="stActo
