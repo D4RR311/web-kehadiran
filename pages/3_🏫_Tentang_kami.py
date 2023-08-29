@@ -5,7 +5,7 @@ from PIL import Image
 dir_file = Path(__file__).parent if "_file_" in locals() else Path.cwd()
 file_css = dir_file /"pages"/ "model" / "main.css"
 laporan_sekolah = dir_file /"pages"/ "aset" /"Laporan Data Sekolah.pdf"
-gambar_logo = dir_file /"foto"/"LogoSmp3kalasan.jpg"
+gambar_logo = dir_file /"foto"/"logo gaka.png"
 
 NAMA = "SMPN 3 KALASAN"
 DESKRIPSI = """
