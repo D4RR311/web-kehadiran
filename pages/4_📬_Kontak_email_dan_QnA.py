@@ -22,7 +22,6 @@ left: 1rem;
 st.title("Tetap Dalam Sentuhan")
 st.markdown(custom_web, unsafe_allow_html=True)
 st.write("📬Untuk Mengetahui Lebih Lanjut Tentang Absensi Kami, isi Email Anda Di Bawah Sini")
-
 kontak_form = """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
@@ -51,4 +50,4 @@ def local_css(filename):
     with open(filename) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("model/style.css")
+local_css("aset/style.css")
