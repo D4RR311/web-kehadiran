@@ -21,7 +21,7 @@ left: 1rem;
 
 st.title("Tetap Dalam Sentuhan")
 st.markdown(custom_web, unsafe_allow_html=True)
-st.write("Untuk Mengetahui Lebih Lanjut Tentang Absensi Kami, isi Email Anda Di Bawah Sini")
+st.write("📬Untuk Mengetahui Lebih Lanjut Tentang Absensi Kami, isi Email Anda Di Bawah Sini")
 
 kontak_form = """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
@@ -35,7 +35,7 @@ kontak_form = """
 st.markdown(kontak_form, unsafe_allow_html=True)
 
 st.write("#")
-st.subheader("Jika Ada Pertanyaan, Silahkan Ketik Email Anda dan pertanyaan anda")
+st.subheader("🤔Jika Ada Pertanyaan, Silahkan Ketik Email Anda dan pertanyaan anda")
 pertanyaan_form =  """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
