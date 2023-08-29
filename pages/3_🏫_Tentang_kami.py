@@ -81,7 +81,7 @@ st.write("SMP NEGERI 3 KALASAN menyediakan listrik untuk membantu kegiatan belaj
 
 #akreditasi
 st.write("#")
-st.subheader("Akreditadi")
+st.subheader("Akreditasi")
 st.write("SMP NEGERI 3 KALASAN memiliki akreditasi A, berdasarkan sertifikat 5.01/BAP-SM/TU/XI/2016.")
 
 #kontak email
