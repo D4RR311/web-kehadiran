@@ -34,7 +34,8 @@ kontak_form = """
 """
 st.markdown(kontak_form, unsafe_allow_html=True)
 
-st.write("Jika Ada Pertanyaan, Silahkan Ketik Email Anda dan pertanyaan anda")
+st.("#")
+st.subheader("Jika Ada Pertanyaan, Silahkan Ketik Email Anda dan pertanyaan anda")
 pertanyaan_form =  """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
