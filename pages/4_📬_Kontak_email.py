@@ -32,6 +32,7 @@ kontak_form = """
     <button type="submit">Send</button>
 </form>
 """
+st.markdown(kontak_form, unsafe_allow_html=True)
 
 st.write("#")
 st.subheader("Jika Ada Pertanyaan, Silahkan Ketik Email Anda dan pertanyaan anda")
@@ -44,7 +45,6 @@ pertanyaan_form =  """
     <button type="submit">Send</button>
 </form>
 """
-st.markdown(kontak_form, unsafe_allow_html=True)
 st.markdown(pertanyaan_form, unsafe_allow_html=True)
 
 def local_css(filename):
