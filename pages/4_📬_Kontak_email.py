@@ -44,8 +44,8 @@ pertanyaan_form =  """
     <button type="submit">Send</button>
 </form>
 """
-st.markdown(pertanyaan_form, unsafe_allow_hmtl=True)
 st.markdown(kontak_form, unsafe_allow_html=True)
+st.markdown(pertanyaan_form, unsafe_allow_hmtl=True)
 
 def local_css(filename):
     with open(filename) as f:
