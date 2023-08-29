@@ -65,6 +65,7 @@ with col2:
 st.write("📬 Email Sekolah: ",EMAIL,"/","akhyariakhyari@yahoo.co.id")
 
 st.write("#")
+st.subheader("Sosial Media:")
 cols = st.columns(len(SOSMED))
 for index, (platform, link) in enumerate(SOSMED.items()):
     cols[index].write(f"[{platform}]({link})")
