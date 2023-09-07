@@ -32,8 +32,6 @@ background-color: rgba(0, 0, 0, 0);
 right: 1rem;
 }}
 
-[class="stActo
-
 [data-testid="collapsedControl"] {{
 left: 1rem;
 }}
