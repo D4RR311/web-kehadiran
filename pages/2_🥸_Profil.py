@@ -71,7 +71,7 @@ st.write("#")
 st.subheader("Pengalaman")
 st.write(
     """
-- 8 Bulan Pengalaman Terhadap Bahasa Pemrograman Python
+- 10 Bulan Pengalaman Terhadap Bahasa Pemrograman Python
 - Sedikit Menguasai Bahasa Pemrograman Pyhton
 """
 )
