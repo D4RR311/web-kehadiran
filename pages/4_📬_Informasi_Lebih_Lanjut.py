@@ -15,7 +15,7 @@ form_kontak = """
 
 st.markdown(form_kontak, unsafe_allow_html=True)
 
-local_css("pages/model/style.css")
+local_css("model/style.css")
 
 def local_css(file_name):
      with open(file_name) as f:
