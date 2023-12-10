@@ -13,7 +13,7 @@ form_kontak = """
      <input type="hidden" name="_capctcha" value="false">
      <input type="text" name="name" placeholder="Nama Anda" required>
      <input type="email" name="email" placeholder="Email Anda" required>
-     <textarea name="message" placeholder="Ketik Pesan Anda Disini"></textarea>
+     <textarea name="message" placeholder="Ketik Saran dan pertanyaan Anda Disini"></textarea>
      <button type="submit">Send</button>
 </form>
 """
