@@ -4,7 +4,7 @@ st.header(":mailbox: Info Lebih Lanjut")
 
 
 form_kontak = """
-<form action="https://formsubmit.co/wafifopi@mailgolem.com" method="POST">
+<form action="https://formsubmit.co/kodanapu@mailgolem.com" method="POST">
      <input type="text" name="name" required>
      <input type="email" name="email" required>
      <button type="submit">Send</button>
