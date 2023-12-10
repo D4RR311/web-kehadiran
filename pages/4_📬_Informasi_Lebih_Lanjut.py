@@ -1,6 +1,12 @@
 import streamlit as st
 
+st.set_page_config(
+     page_title="Web Absensi",
+     page_icon="🗓️",
+)
+
 st.header(":mailbox: Info Lebih Lanjut")
+st.write("Jika ada pertanyaan atau saran, silahkan isi forum dibawah ini")
 
 form_kontak = """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST" />
