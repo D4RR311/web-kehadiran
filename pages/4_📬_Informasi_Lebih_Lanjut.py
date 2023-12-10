@@ -5,8 +5,10 @@ st.header(":mailbox: Info Lebih Lanjut")
 
 form_kontak = """
 <form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST" />
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
+     <input type="hidden" name="_capctcha" value="false">
+     <input type="text" name="name" placeholder="Nama Anda" required>
+     <input type="email" name="email" placeholder="Email Anda" required>
+     <textarea name="message" placeholder="Ketik Pesan Anda Disini"></textarea>
      <button type="submit">Send</button>
 </form>
 """
