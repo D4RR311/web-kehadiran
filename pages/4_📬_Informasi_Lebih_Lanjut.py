@@ -6,6 +6,12 @@ st.set_page_config(
 )
 
 st.header(":mailbox: Info Lebih Lanjut")
+hide_st_style = """
+          <style>
+          footer {visibility: hidden;}
+          </style>
+          """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.write("Jika ada pertanyaan atau saran, silahkan isi forum dibawah ini")
 
 form_kontak = """
