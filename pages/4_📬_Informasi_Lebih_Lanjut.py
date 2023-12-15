@@ -9,7 +9,7 @@ st.header(":mailbox: Info Lebih Lanjut")
 st.write("Jika ada pertanyaan atau saran, silahkan isi forum dibawah ini")
 
 form_kontak = """
-<form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST" />
+<form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST" >
      <input type="hidden" name="_captcha" value="false">
      <input type="text" name="name" placeholder="Nama Anda" required>
      <input type="email" name="email" placeholder="Email Anda" required>
