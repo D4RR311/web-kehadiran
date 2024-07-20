@@ -15,6 +15,7 @@ Peneliti SMPN 3 Kalasan, Operator Web Absensi dan Reposity Github, Pemula Dalam 
 EMAIL = "darrellardhanihidayat@gmail.com"
 SOSIAL_MEDIA = {
     "GitHub": "https://github.com/D4RR311",
+    "Instagram": "https://www.instagram.com/d4r.m409?igsh=MWQ4OTZpenFrd3Z2ZQ==",
 }
 
 st.set_page_config(
