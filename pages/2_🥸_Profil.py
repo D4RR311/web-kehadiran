@@ -71,8 +71,8 @@ st.write("#")
 st.subheader("Pengalaman")
 st.write(
     """
-- 10 Bulan Pengalaman Terhadap Bahasa Pemrograman Python
-- Sedikit Menguasai Bahasa Pemrograman Pyhton
+- Memiliki Pengalaman Terhadap Bahasa Pemrograman Python
+- Operator Web Absensi
 """
 )
 
@@ -83,13 +83,6 @@ st.write(
 - 💻Pemrograman: Python (cv2, Pandas, Datetime, Numpy, Face_Recognition), Streamlit
 """
 )
-
-st.write("#")
-st.subheader("Riwayat Kegiatan")
-st.write("---")
-
-st.write("🥸", "Junior Operator Pemrograman | SMP N 3 KALASAN")
-st.write("25/04/2023 - Sampai Sekarang")
 
 st.write("#")
 st.subheader("Prestasi")
