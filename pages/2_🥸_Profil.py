@@ -16,6 +16,7 @@ EMAIL = "darrellardhanihidayat@gmail.com"
 SOSIAL_MEDIA = {
     "GitHub": "https://github.com/D4RR311",
     "Instagram": "https://www.instagram.com/d4r.m409?igsh=MWQ4OTZpenFrd3Z2ZQ==",
+    "Youtube": "https://youtube.com/@d4rr3119?si=HvQrVPC1kEcaDPIr"
 }
 
 st.set_page_config(
@@ -81,10 +82,24 @@ st.write("#")
 st.subheader("Keterampilan")
 st.write(
     """
-- 💻Pemrograman: Python (cv2, Pandas, Datetime, Numpy, Face_Recognition), Streamlit
+- 💻Pemrograman: Python, JSON, CSS
+"""
+)
+
+st.write("#")
+st.subheader("Kegemaran")
+st.write(
+    """
+- Programming
+- Basketball
+- Nonton anime
 """
 )
 
 st.write("#")
 st.subheader("Prestasi")
-st.write("🏆 Juara 2 Dalam Perlombaan Karya Ilmiah Remaja Tingkat Kabupaten Bidang IPTEK Dan Rekayasa Tingkat SMP")
+st.write(
+    """
+- 🏆 Juara 2 Dalam Perlombaan Karya Ilmiah Remaja Tingkat Kabupaten Bidang IPTEK Dan Rekayasa Tingkat SMP
+"""
+)
