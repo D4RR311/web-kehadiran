@@ -90,9 +90,9 @@ st.write("#")
 st.subheader("Kegemaran")
 st.write(
     """
-- Programming
-- Basketball
-- Nonton anime
+- 💻Programming
+- 🏀Basketball
+- 📺Nonton anime
 """
 )
 
