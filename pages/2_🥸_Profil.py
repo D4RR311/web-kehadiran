@@ -10,7 +10,7 @@ gmbr_profil = dir_file / "foto" / "darrell kacamata.jpg"
 
 NAMA = "Darrell Ardhani Hidayat"
 DESKRIPSI = """
-Peneliti SMPN 3 Kalasan, Operator Web Absensi dan Reposity Github, Pemula Dalam Bahasa Pemrograman Python
+Peneliti di bidang IPTEK dan rekayasa, Operator Web Absensi dan Reposity Github, Pemula Dalam Bahasa Pemrograman Python
 """
 EMAIL = "darrellardhanihidayat@gmail.com"
 SOSIAL_MEDIA = {
