@@ -93,6 +93,8 @@ st.write(
 - 💻Programming
 - 🏀Basketball
 - 📺Nonton anime
+- 🎮Main Valorant
+- 📽️Livestram Youtube
 """
 )
 
