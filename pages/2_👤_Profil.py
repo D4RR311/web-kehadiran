@@ -94,7 +94,7 @@ st.write(
 - 🏀Basketball
 - 📺Nonton anime
 - 🎮Main Valorant
-- 📽️Livestram Youtube
+- 📽️Livestream Youtube
 """
 )
 
