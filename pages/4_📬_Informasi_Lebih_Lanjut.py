@@ -15,7 +15,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 st.write("Jika ada pertanyaan atau saran, silahkan isi forum dibawah ini")
 
 form_kontak = """
-<form action="https://formsubmit.co/emailreceiver224@gmail.com" method="POST" >
+<form action="https://formsubmit.co/receiveremail612@gmail.com" method="POST" >
      <input type="hidden" name="_captcha" value="false">
      <input type="text" name="name" placeholder="Nama Anda" required>
      <input type="email" name="email" placeholder="Email Anda" required>
