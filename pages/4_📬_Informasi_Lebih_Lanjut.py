@@ -11,6 +11,7 @@ st.write("Jika ada pertanyaan atau saran, silahkan isi forum dibawah ini")
 
 form_kontak = """
 <form action="https://formsubmit.co/receiveremail612@gmail.com" method="POST">
+     <input type="hidden" name="_captcha" value="false">
      <input type="text" name="name" placeholder="Your name" required>
      <input type="email" name"email" placeholder="Your email" required>
      <textarea name="message" placeholder="Your message here"></teaxtarea>
