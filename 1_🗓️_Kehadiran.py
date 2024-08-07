@@ -1,4 +1,4 @@
-import base64
+pimport base64
 import streamlit as st
 import pandas as pd
 import time
@@ -42,10 +42,9 @@ left: 1rem;
 st.title("Bagian Absensi")
 st.markdown(bg_web, unsafe_allow_html=True)
 
-ts = time.time()
-date = datetime.fromtimestamp(ts).strftime("%d-%m-%Y")
-stempel_waktu = datetime.fromtimestamp(ts).strftime("%H-%M-%S")
-
-df = pd.read_csv("absensi/kehadiran_" + date + ".csv")
+sw = time.time()
+tanggal = datetime.fromtimestamp(sw).strftime("%d-%m-%Y")
+stempel_waktu = datetime.fromtimestamp(sw).strftime("%H-%M-%S")
+df = pd.read_csv("absensi/kehadiran_" + tanggal + ".csv")
 
 st.dataframe(df.style.highlight_max(axis=0))
