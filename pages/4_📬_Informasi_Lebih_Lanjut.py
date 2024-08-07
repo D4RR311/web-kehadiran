@@ -9,21 +9,22 @@ st.header(":mailbox: Info Lebih Lanjut")
 
 st.write("Jika ada pertanyaan atau saran, silahkan isi formulir di bawah ini")
 
+# Ganti 'XXXXXXXXXXXXXX' dengan ID formulir JotForm Anda
 form_kontak = """
 <iframe
-    id="JotFormIFrame-2421911427801452"
+    id="JotFormIFrame-XXXXXXXXXXXXXX"
     title="JotForm Form"
     onload="window.parent.scrollTo(0,0)"
     allowtransparency="true"
     allowfullscreen="true"
     allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/2421911427801452"
+    src="https://form.jotform.com/XXXXXXXXXXXXXX"
     frameborder="0"
     style="min-width:100%;height:539px;border:none;"
     scrolling="no"
 ></iframe>
 <script type="text/javascript">
-    var ifr = document.getElementById("JotFormIFrame-2421911427801452");
+    var ifr = document.getElementById("JotFormIFrame-XXXXXXXXXXXXXX");
     if (ifr) {
         var src = ifr.src;
         var iframeParams = [];
@@ -91,9 +92,3 @@ form_kontak = """
 """
 
 st.markdown(form_kontak, unsafe_allow_html=True)
-
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-local_css("pages/model/style.css")
