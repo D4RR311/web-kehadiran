@@ -20,7 +20,7 @@ form_kontak = """
     allow="geolocation; microphone; camera"
     src="https://form.jotform.com/242191427801452"
     frameborder="0"
-    style="min-width:100%;height:539px;border:none;"
+    style="min-width:100%;height:1000px;border:none;"
     scrolling="no"
 ></iframe>
 <script type="text/javascript">
@@ -92,3 +92,9 @@ form_kontak = """
 """
 
 st.markdown(form_kontak, unsafe_allow_html=True)
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("pages/model/style.css")
