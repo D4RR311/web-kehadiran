@@ -12,19 +12,19 @@ st.write("Jika ada pertanyaan atau saran, silahkan isi formulir di bawah ini")
 # Ganti 'XXXXXXXXXXXXXX' dengan ID formulir JotForm Anda
 form_kontak = """
 <iframe
-    id="JotFormIFrame-XXXXXXXXXXXXXX"
+    id="JotFormIFrame-242191427801452"
     title="JotForm Form"
     onload="window.parent.scrollTo(0,0)"
     allowtransparency="true"
     allowfullscreen="true"
     allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/XXXXXXXXXXXXXX"
+    src="https://form.jotform.com/242191427801452"
     frameborder="0"
     style="min-width:100%;height:539px;border:none;"
     scrolling="no"
 ></iframe>
 <script type="text/javascript">
-    var ifr = document.getElementById("JotFormIFrame-XXXXXXXXXXXXXX");
+    var ifr = document.getElementById("JotFormIFrame-242191427801452");
     if (ifr) {
         var src = ifr.src;
         var iframeParams = [];
