@@ -54,7 +54,7 @@ form_kontak = """
     src="https://form.jotform.com/242191427801452"
     frameborder="0"
     style="min-width:115%;height:1310px;border:none;"
-    scrolling="no"
+    scrolling="yes"
 ></iframe>
 <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-242191427801452");
