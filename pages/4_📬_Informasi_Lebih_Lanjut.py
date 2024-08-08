@@ -36,6 +36,7 @@ left: 1rem;
 </style>
 """
 
+st.markdown(bg_web, unsafe_allow_html=True)
 st.title(":mailbox: Info Lebih Lanjut")
 
 st.write("Jika ada pertanyaan atau saran, silahkan isi formulir di bawah ini")
@@ -122,7 +123,7 @@ form_kontak = """
 </script>
 """
 
-st.markdown(form_kontak, bg_web, unsafe_allow_html=True)
+st.markdown(form_kontak, unsafe_allow_html=True)
 
 def local_css(file_name):
     with open(file_name) as f:
