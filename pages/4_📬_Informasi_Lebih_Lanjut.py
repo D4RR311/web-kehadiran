@@ -14,6 +14,7 @@ def get_img_as_base64(file):
 
 img = get_img_as_base64("foto/SAKASMA.jpg")
 
+#Bagian Tombol Web
 bg_web = f"""
 <style>
 [data-testid="stAppViewContainer"]{{
@@ -39,9 +40,9 @@ left: 1rem;
 st.markdown(bg_web, unsafe_allow_html=True)
 st.title(":mailbox: Info Lebih Lanjut")
 
-st.write("Jika ada pertanyaan atau saran, silahkan isi formulir di bawah ini")
+st.write("Jika ada pertanyaan, komentar atau saran, silahkan isi formulir di bawah ini")
 
-# Ganti 'XXXXXXXXXXXXXX' dengan ID formulir JotForm Anda
+# Ganti 'XXXXXXXXXXXXXX' dengan ID formulir JotForm
 form_kontak = """
 <iframe
     id="JotFormIFrame-242191427801452"
@@ -124,9 +125,3 @@ form_kontak = """
 """
 
 st.markdown(form_kontak, unsafe_allow_html=True)
-
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-local_css("pages/model/style.css")
