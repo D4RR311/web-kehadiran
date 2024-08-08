@@ -8,13 +8,35 @@ st.set_page_config(
 
 @st.cache_data
 def get_img_as_base64(file):
-     with open(file, "rb") as f:
-          data = f.read()
-     return base64.b64encode(data).decode()
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
 img = get_img_as_base64("foto/SAKASMA.jpg")
 
-st.header(":mailbox: Info Lebih Lanjut")
+bg_web = f"""
+<style>
+[data-testid="stAppViewContainer"]{{
+background-image: url("data:image/png;base64,{img}");
+background-size: cover;
+}}
+
+[data-testid="stHeader"] {{
+background-color: rgba(0, 0, 0, 0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 1rem;
+}}
+
+[data-testid="collapsedControl"] {{
+left: 1rem;
+}}
+
+</style>
+"""
+
+st.title(":mailbox: Info Lebih Lanjut")
 
 st.write("Jika ada pertanyaan atau saran, silahkan isi formulir di bawah ini")
 
@@ -100,7 +122,7 @@ form_kontak = """
 </script>
 """
 
-st.markdown(form_kontak, unsafe_allow_html=True)
+st.markdown(form_kontak, bg_web, unsafe_allow_html=True)
 
 def local_css(file_name):
     with open(file_name) as f:
