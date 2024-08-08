@@ -53,7 +53,7 @@ form_kontak = """
     allow="geolocation; microphone; camera"
     src="https://form.jotform.com/242191427801452"
     frameborder="0"
-    style="min-width:115%;height:1000px;border:none;"
+    style="min-width:115%;height:900px;border:none;"
     scrolling="yes"
 ></iframe>
 <script type="text/javascript">
