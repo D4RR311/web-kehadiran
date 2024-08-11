@@ -54,7 +54,7 @@ with open(file_css) as f:
 with open(hasil_laporan, "rb") as file_pdf:
     PDFByte = file_pdf.read()
 gmbr_profil = Image.open(gmbr_profil)  
-
+gmbr_profil_2 = Image.open(gmbr_profil_2) 
 
 
 col1, col2 = st.columns(2, gap="small")
@@ -117,9 +117,7 @@ st.write(
 )
 
 st.write("---")
-with open(file_css) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-gmbr_profil_2 = Image.open(gmbr_profil_2)  
+
 col3, col4 = st.columns(4, gap="small")
 with col3:
     st.image(gmbr_profil_2, width=230)
