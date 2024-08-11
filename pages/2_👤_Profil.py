@@ -177,6 +177,6 @@ st.write("#")
 st.subheader("Prestasi")
 st.write(
     """
-- - 🏆⚽kejuaraan sepak bola tingkat kabupaten
+- - 🏆⚽kejuaraan sepak bola tingkat kabupaten U9
 """
 )
