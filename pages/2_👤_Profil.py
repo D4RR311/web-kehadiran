@@ -138,3 +138,9 @@ with col3:
 with col4:
     st.title(NAMA2)
     st.write(DESKRIPSI2)
+
+st.write("#")
+st.subheader("Sosial Media:")
+cols = st.columns(len(SOSIAL_MEDIA2))
+for index, (platform, link) in enumerate(SOSIAL_MEDIA2.items()):
+    cols[index].write(f"[{platform}]({link})")
