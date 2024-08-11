@@ -144,3 +144,39 @@ st.subheader("Sosial Media:")
 cols = st.columns(len(SOSIAL_MEDIA2))
 for index, (platform, link) in enumerate(SOSIAL_MEDIA2.items()):
     cols[index].write(f"[{platform}]({link})")
+
+st.write("#")
+st.subheader("Pengalaman")
+st.write(
+    """
+- Memiliki Pengalaman Terhadap Bahasa Pemrograman Python
+- Operator Web Absensi
+"""
+)
+
+st.write("#")
+st.subheader("Keterampilan")
+st.write(
+    """
+- 💻Pemrograman: Python, HTML, CSS
+"""
+)
+
+st.write("#")
+st.subheader("Kegemaran")
+st.write(
+    """
+- 💻Programming
+- 📺Nonton anime
+- 🎮Main FIFA
+- ⚽Sepak bola
+"""
+)
+
+st.write("#")
+st.subheader("Prestasi")
+st.write(
+    """
+- - 🏆⚽kejuaraan sepak bola tingkat kabupaten
+"""
+)
