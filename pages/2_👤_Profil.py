@@ -71,7 +71,7 @@ def load_image(image_path):
 gmbr_profil = load_image(gmbr_profil_path)
 gmbr_profil_2 = load_image(gmbr_profil_2_path)
 
-col1, col2 = st.columns(2, gap="small")
+col1, col2 = st.columns(2)
 with col1:
     st.image(gmbr_profil, width=230)
 
@@ -132,7 +132,7 @@ st.write(
 
 st.write("---")
 
-col3, col4 = st.columns(4, gap="small")
+col3, col4 = st.columns(2)  # Menggunakan 2 kolom jika Anda tidak menggunakan gap
 with col3:
     st.image(gmbr_profil_2, width=230)
 with col4:
