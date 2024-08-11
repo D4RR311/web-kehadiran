@@ -117,9 +117,10 @@ st.write(
 )
 
 st.write("---")
-col3, col4 = st.columns(2, gap="small")
+
+col3, col4 = st.colums(2, gap="small")
 with col3:
-    st.image(gmbr_profil_2 , width=230)
+    st.image(gmbr_profil_2, width=230)
 
 with col4:
     st.title(NAMA2)
