@@ -2,7 +2,7 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 
-dir_file = Path(__file__).parent if "_file_" in locals() else Path.cwd()
+dir_file = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 file_css = dir_file /"pages"/ "model" / "main.css"
 hasil_laporan = dir_file /"pages"/ "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil = dir_file / "foto" / "darrell kacamata.jpg"
