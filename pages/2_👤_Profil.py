@@ -118,7 +118,7 @@ st.write(
 
 st.write("---")
 
-col3, col4 = st.colums(4, gap="small")
+col3, col4 = st.columns(4, gap="small")
 with col3:
     st.image(gmbr_profil_2, width=230)
 
