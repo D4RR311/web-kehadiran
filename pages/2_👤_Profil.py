@@ -117,7 +117,8 @@ st.write(
 )
 
 st.write("---")
-
+with open(file_css) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 gmbr_profil_2 = Image.open(gmbr_profil_2)  
 col3, col4 = st.columns(4, gap="small")
 with col3:
