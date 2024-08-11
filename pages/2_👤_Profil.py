@@ -2,14 +2,12 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 
-# Perbaikan typo pada __file__
-dir_file = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-
 # Pastikan path file sesuai
+dir_file = Path.cwd()
 file_css = dir_file / "pages" / "model" / "main.css"
 hasil_laporan = dir_file / "pages" / "aset" / "LAPORAN KIR OK.pdf"
-gmbr_profil = dir_file / "foto" / "darrell kacamata.jpg"
-gmbr_profil_2 = dir_file / "foto" / "ROGHIB.jpg"
+gmbr_profil_path = dir_file / "foto" / "darrell kacamata.jpg"
+gmbr_profil_2_path = dir_file / "foto" / "ROGHIB.jpg"
 
 NAMA1 = "Darrell Ardhani Hidayat"
 DESKRIPSI1 = """
@@ -58,12 +56,20 @@ if file_css.exists():
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 # Buka file PDF
-with open(hasil_laporan, "rb") as file_pdf:
-    PDFByte = file_pdf.read()
+try:
+    with open(hasil_laporan, "rb") as file_pdf:
+        PDFByte = file_pdf.read()
+except FileNotFoundError:
+    st.error("File laporan PDF tidak ditemukan.")
+
+# Fungsi untuk memuat gambar dengan cache
+@st.cache
+def load_image(image_path):
+    return Image.open(image_path)
 
 # Buka gambar
-gmbr_profil = Image.open(gmbr_profil)
-gmbr_profil_2 = Image.open(gmbr_profil_2)
+gmbr_profil = load_image(gmbr_profil_path)
+gmbr_profil_2 = load_image(gmbr_profil_2_path)
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -72,13 +78,14 @@ with col1:
 with col2:
     st.title(NAMA1)
     st.write(DESKRIPSI1)
-    st.download_button(
-        label="📃 Download Laporan",
-        data=PDFByte,
-        file_name=hasil_laporan.name,
-        mime="application/pdf",  # Perbaikan MIME type
-    )
-st.write("📬Email Kreator:", EMAIL1)
+    if 'PDFByte' in locals():
+        st.download_button(
+            label="📃 Download Laporan",
+            data=PDFByte,
+            file_name=hasil_laporan.name,
+            mime="application/pdf",  # Perbaikan MIME type
+        )
+    st.write("📬 Email Kreator:", EMAIL1)
 
 st.write("#")
 st.subheader("Sosial Media:")
