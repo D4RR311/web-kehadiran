@@ -2,9 +2,12 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 
+# Perbaikan typo pada __file__
 dir_file = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-file_css = dir_file /"pages"/ "model" / "main.css"
-hasil_laporan = dir_file /"pages"/ "aset" / "LAPORAN KIR OK.pdf"
+
+# Pastikan path file sesuai
+file_css = dir_file / "pages" / "model" / "main.css"
+hasil_laporan = dir_file / "pages" / "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil = dir_file / "foto" / "darrell kacamata.jpg"
 gmbr_profil_2 = dir_file / "foto" / "ROGHIB.jpg"
 
@@ -19,11 +22,11 @@ SOSIAL_MEDIA1 = {
     "Youtube": "https://youtube.com/@d4rr3119?si=HvQrVPC1kEcaDPIr"
 }
 
-NAMA2="Roghib Khoirul Adnan"
-DESKRIPSI2="""
+NAMA2 = "Roghib Khoirul Adnan"
+DESKRIPSI2 = """
 Peneliti di bidang IPTEK dan rekayasa, Operator Web Absensi dan Repository Github, Pemula Dalam Bahasa Pemrograman Python
 """
-EMAIL2= "rohibkoirul4@gmail.com"
+EMAIL2 = "rohibkoirul4@gmail.com"
 SOSIAL_MEDIA2 = {
     "GitHub": "https://github.com/Rxyzen01",
     "Instagram": "https://www.instagram.com/roghibkhoirul.a?igsh=MTc4Y3FmNzR2NzlhOQ=="
@@ -37,11 +40,11 @@ st.set_page_config(
 custom_web = f"""
 <style>
 [data-testid="stToolbar"] {{
-right: 2rem;
+    right: 2rem;
 }}
 
-[data-testid="collapsedControl"]{{
-left: 1rem;
+[data-testid="collapsedControl"] {{
+    left: 1rem;
 }}
 </style>
 """
@@ -49,13 +52,18 @@ left: 1rem;
 st.title("Bagian Profil Kreator")
 st.markdown(custom_web, unsafe_allow_html=True)
 
-with open(file_css) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+# Periksa apakah file CSS ada
+if file_css.exists():
+    with open(file_css) as f:
+        st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+
+# Buka file PDF
 with open(hasil_laporan, "rb") as file_pdf:
     PDFByte = file_pdf.read()
-gmbr_profil = Image.open(gmbr_profil)  
-gmbr_profil_2 = Image.open(gmbr_profil_2) 
 
+# Buka gambar
+gmbr_profil = Image.open(gmbr_profil)
+gmbr_profil_2 = Image.open(gmbr_profil_2)
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -67,11 +75,10 @@ with col2:
     st.download_button(
         label="📃 Download Laporan",
         data=PDFByte,
-
         file_name=hasil_laporan.name,
-        mime="application/octet-stream",
+        mime="application/pdf",  # Perbaikan MIME type
     )
-st.write("📬Email Kreator:",EMAIL1)
+st.write("📬Email Kreator:", EMAIL1)
 
 st.write("#")
 st.subheader("Sosial Media:")
