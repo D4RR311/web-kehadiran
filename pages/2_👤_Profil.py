@@ -78,13 +78,6 @@ with col1:
 with col2:
     st.title(NAMA1)
     st.write(DESKRIPSI1)
-    if 'PDFByte' in locals():
-        st.download_button(
-            label="📃 Download Laporan",
-            data=PDFByte,
-            file_name=hasil_laporan.name,
-            mime="application/pdf",  # Perbaikan MIME type
-        )
     st.write("📬 Email Kreator:", EMAIL1)
 
 st.write("#")
