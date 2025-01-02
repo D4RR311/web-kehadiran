@@ -38,6 +38,7 @@ left: 1rem;
 
 </style>
 """
+st.title("Daftar Hadir Siswa")
 st.markdown(bg_web, unsafe_allow_html=True)
 url = "https://docs.google.com/spreadsheets/d/1OxwoDBP6eDowycuYtNP5_vyvM_j8QBmfu78o_Y8g6XI/edit?usp=sharing"
 conn = st.connection("gsheets", type=GSheetsConnection)
