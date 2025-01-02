@@ -63,7 +63,7 @@ except FileNotFoundError:
     st.error("File laporan PDF tidak ditemukan.")
 
 # Fungsi untuk memuat gambar dengan cache
-@st.cache
+@st.cache_data
 def load_image(image_path):
     return Image.open(image_path)
 
