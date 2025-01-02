@@ -1,20 +1,21 @@
 import pandas as pd
 import base64
+import plotly.express as px
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
 st.set_page_config(
     page_title="Web Absensi",
-    page_icon="📆"
+    page_icon="🗓️",
 )
 
 @st.cache_data
 def get_img_as_base64(file):
-    with open(file, 'rb') as f:
+    with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-img = get_img_as_base64("foto/SAKASMA.jpg")
+img = get_img_as_base64("foto/SAKASMA.jpg")\
 
 bg_web = f"""
 <style>
@@ -23,11 +24,15 @@ background-image: url("data:image/png;base64,{img}");
 background-size: cover;
 }}
 
-[data-testid="stHeader"]{{
+[data-testid="stHeader"] {{
 background-color: rgba(0, 0, 0, 0);
 }}
 
-[data-testid="collapseControl"]{{
+[data-testid="stToolbar"] {{
+right: 1rem;
+}}
+
+[data-testid="collapsedControl"] {{
 left: 1rem;
 }}
 
@@ -38,15 +43,16 @@ url = "https://docs.google.com/spreadsheets/d/1OxwoDBP6eDowycuYtNP5_vyvM_j8QBmfu
 conn = st.connection("gsheets", type=GSheetsConnection)
 df = conn.read(spreadsheet=url, usecols=[0, 1, 2])
 
-col1, col2 = st.coolumns(2)
+col1, col2 = st.columns(2)
 with col1:
     st.dataframe(df)
-with col2:
-    st.header("Filter Kelas:")
 
+with col2:
+    st.header("Please Filter Here:")
+    
     kelas = st.multiselect(
         "Pilih Kelas:",
-        options=df["KELAS"].dropna().unique()
+        options=df["KELAS"].dropna().unique(),
         default=df["KELAS"].dropna().unique()
     )
     df_selection = df.query(
