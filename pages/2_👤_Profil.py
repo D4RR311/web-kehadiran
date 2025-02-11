@@ -54,13 +54,6 @@ if file_css.exists():
     with open(file_css) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-# Buka file PDF
-try:
-    with open(hasil_laporan, "rb") as file_pdf:
-        PDFByte = file_pdf.read()
-except FileNotFoundError:
-    st.error("File laporan PDF tidak ditemukan.")
-
 # Fungsi untuk memuat gambar dengan cache
 @st.cache_data
 def load_image(image_path):
