@@ -5,7 +5,6 @@ from PIL import Image
 # Pastikan path file sesuai
 dir_file = Path.cwd()
 file_css = dir_file / "pages" / "model" / "main.css"
-hasil_laporan = dir_file / "pages" / "aset" / "LAPORAN KIR OK.pdf"
 gmbr_profil_path = dir_file / "foto" / "darrell kacamata.jpg"
 gmbr_profil_2_path = dir_file / "foto" / "ROGHIB.jpg"
 
