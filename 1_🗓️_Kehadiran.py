@@ -40,7 +40,7 @@ left: 1rem;
 """
 st.title("Daftar Hadir Siswa")
 st.markdown(bg_web, unsafe_allow_html=True)
-url = "https://docs.google.com/spreadsheets/d/1TmPb_i4Yt5abu_cFCwd4S41L5CEKMSjtU0YONdMFyPQ/edit?usp=sharing"
+url = "https://docs.google.com/spreadsheets/d/1jt6r6xn9KOV3QnGBZGLIs69bgztXa3kLlIHxxHYrY-U/edit?usp=sharing"
 conn = st.connection("gsheets", type=GSheetsConnection)
 df = conn.read(spreadsheet=url, usecols=[0, 1, 2])
 
