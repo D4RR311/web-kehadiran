@@ -40,7 +40,7 @@ left: 1rem;
 """
 st.title("Daftar Hadir Siswa")
 st.markdown(bg_web, unsafe_allow_html=True)
-url = "https://docs.google.com/spreadsheets/d/1EiMu8pWiPnnviXvC8XvYw73bSh-S9n_N1bwjogOUCNQ/edit?usp=sharing"
+url = "https://docs.google.com/spreadsheets/d/1EiMu8pWiPnnviXvC8XvYw73bSh-S9n_N1bwjogOUCNQ/edit?gid=1607586979#gid=1607586979"
 conn = st.connection("gsheets", type=GSheetsConnection)
 df = conn.read(spreadsheet=url, usecols=[0, 1, 2])
 
@@ -60,3 +60,4 @@ with col2:
         "KELAS == @kelas"
     )
     st.dataframe(df_selection)
+
